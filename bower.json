@@ -1,0 +1,19 @@
+{
+  "name": "jQuery",
+  "description": "HomeWork with jQuery lib",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "jQuery"
+  ],
+  "authors": [
+    "Nikolai Hristev"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "jQuery": "^2.2.0",
+    "bootstrap": "^3.3.6",
+    "mustache.js": "mustache#^2.2.1"
+  }
+}

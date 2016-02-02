@@ -1,0 +1,27 @@
+<div class="table-responsive">
+    <table class="table table-hover "id="dataTable">
+        <thead>
+        <tr>
+            <th>Maker</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Odomer</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#cars}}
+        <tr id="{{id}}">
+            <td class="make">{{make}}</td>
+            <td class="model">{{model}}</td>
+            <td class="year">{{year}}</td>
+            <td class="odomer">{{odomer}}</td>
+            <td>
+                <button type="button" data="{{id}}" data-action="delete" class="btn btn-danger" ><span class="glyphicon glyphicon-remove-circle"></span></button>
+                <button type="button" data="{{id}}" data-action="edit" class="btn btn-primary" ><span class="glyphicon glyphicon-edit"></span></button>
+            </td>
+        </tr>
+        {{/cars}}
+        </tbody>
+    </table>
+</div>

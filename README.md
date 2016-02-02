@@ -1,1 +1,1 @@
-# jQuery_hw
+JQuery homework

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars data</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="#menu-of-navbar" aria-expanded="false" >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Auto sales</a>
+        </div>
+        <div class="collapse navbar-collapse" id="menu-of-navbar">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"  id="modal-triger">New car</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container" id="aplication">
+
+</div>
+<div class="modal fade" tabindex="-1" role="dialog" id="inputModal">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Add car data</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form" id="car-register">
+                    <div class="form-group">
+                        <label for="car-maker"> Brand</label>
+                        <input class="form-control" type="text" id="car-maker">
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="car-model">Model</label>
+                        <input class="form-control" type="text" id="car-model">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="car-year">Year</label>
+                        <input class="form-control" id="car-year" type="number">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="car-odomer">Mileage</label>
+                        <input class="form-control" type="number" id="car-odomer">
+
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="add-car">Save changes</button>
+                <div class="alert alert-danger hide" id="error-flash">
+                    Invalid data entered.
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    <script type="text/javascript" src="bower_components/jQuery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/mustache.js/mustache.min.js"></script>
+    <script type="text/javascript" src="js/Car.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/events.js"></script>
+
+</body>
+</html>
